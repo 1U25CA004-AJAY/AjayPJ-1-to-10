@@ -1,4 +1,4 @@
-USE collegeDB;
+USE CollegeDB;
 
 CREATE TABLE Marksheet (
     rollNo INT,
