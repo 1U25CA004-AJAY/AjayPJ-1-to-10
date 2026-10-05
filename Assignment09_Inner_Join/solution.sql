@@ -1,8 +1,10 @@
-CREATE DATABASE collegeDB;
-USE collegeDB;
+USE CollegeDB;
+
+DROP TABLE IF EXISTS Student;
+DROP TABLE IF EXISTS Department;
 
 CREATE TABLE Department (
-    DepartmentID INT(10) PRIMARY KEY,
+    DepartmentID INT PRIMARY KEY,
     DepartmentName VARCHAR(50)
 );
 
@@ -12,9 +14,9 @@ INSERT INTO Department VALUES
 (103, 'Science');
 
 CREATE TABLE Student (
-    StudentID INT(10) PRIMARY KEY,
+    StudentID INT PRIMARY KEY,
     StudentName VARCHAR(20),
-    DepartmentID INT(10)
+    DepartmentID INT
 );
 
 INSERT INTO Student VALUES
