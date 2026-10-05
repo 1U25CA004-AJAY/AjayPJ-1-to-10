@@ -1,5 +1,3 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
 USE CollegeDB;
 
 CREATE TABLE Student(
@@ -11,13 +9,9 @@ CREATE TABLE Student(
     Email VARCHAR(30),
     PhoneNumber BIGINT
 );
+INSERT INTO Student VALUES
+(1001, 'Arun', 'Male', 101),
+(1002, 'Divya', 'Female', 102),
+(1003, 'Karthik', 'Male', 101);
 
--- Insert
-
--- 1001 Arun
-
--- 1002 Divya
-
--- 1003 Karthik
-
--- Display all records
+SELECT * FROM Student;
