@@ -1,5 +1,7 @@
 USE CollegeDB;
 
+DROP TABLE IF EXISTS Course;
+
 CREATE TABLE Course (
     CourseID INT(10) PRIMARY KEY,
     CourseName VARCHAR(20),
