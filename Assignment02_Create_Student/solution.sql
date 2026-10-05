@@ -1,4 +1,3 @@
-CREATE DATABASE CollegeDB;
 USE CollegeDB;
 CREATE TABLE Student(
 StudentID INT(5) PRIMARY KEY ,
