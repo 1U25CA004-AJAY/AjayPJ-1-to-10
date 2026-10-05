@@ -1,8 +1,17 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
 USE CollegeDB;
 
-CREATE TABLE Cource(courceID INT(10) PRIMARY KEY ,courceName VARCHAR(20),Credits INT(10),departmentID INT(5));
-INSERT INTO Cource VALUES (101,"BCA",4,201),(102,"BSC IT",5,204),(103,"BBA",4,210);
-DESC Cource;
-SELECT * FROM Cource;
+CREATE TABLE Course (
+    CourseID INT(10) PRIMARY KEY,
+    CourseName VARCHAR(20),
+    Credits INT(10),
+    DepartmentID INT(5)
+);
+
+INSERT INTO Course VALUES
+(101, 'BCA', 4, 201),
+(102, 'BSC IT', 5, 204),
+(103, 'BBA', 4, 210);
+
+DESC Course;
+
+SELECT * FROM Course;
