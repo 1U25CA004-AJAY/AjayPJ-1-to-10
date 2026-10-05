@@ -1,4 +1,5 @@
-USE CollegeDB;
+CREATE DATABASE collegeDB;
+USE collegeDB;
 
 CREATE TABLE Department (
     DepartmentID INT(10) PRIMARY KEY,
